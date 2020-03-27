@@ -35,6 +35,7 @@
             this.cbBak = new System.Windows.Forms.CheckBox();
             this.cbFdb = new System.Windows.Forms.CheckBox();
             this.cbFbk = new System.Windows.Forms.CheckBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // btnClean
@@ -76,7 +77,7 @@
             // cbBak
             // 
             this.cbBak.AutoSize = true;
-            this.cbBak.Location = new System.Drawing.Point(16, 132);
+            this.cbBak.Location = new System.Drawing.Point(12, 95);
             this.cbBak.Name = "cbBak";
             this.cbBak.Size = new System.Drawing.Size(47, 17);
             this.cbBak.TabIndex = 4;
@@ -86,7 +87,7 @@
             // cbFdb
             // 
             this.cbFdb.AutoSize = true;
-            this.cbFdb.Location = new System.Drawing.Point(16, 155);
+            this.cbFdb.Location = new System.Drawing.Point(12, 118);
             this.cbFdb.Name = "cbFdb";
             this.cbFdb.Size = new System.Drawing.Size(44, 17);
             this.cbFdb.TabIndex = 5;
@@ -96,18 +97,26 @@
             // cbFbk
             // 
             this.cbFbk.AutoSize = true;
-            this.cbFbk.Location = new System.Drawing.Point(16, 178);
+            this.cbFbk.Location = new System.Drawing.Point(12, 141);
             this.cbFbk.Name = "cbFbk";
             this.cbFbk.Size = new System.Drawing.Size(44, 17);
             this.cbFbk.TabIndex = 6;
             this.cbFbk.Text = ".fbk";
             this.cbFbk.UseVisualStyleBackColor = true;
             // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(16, 184);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(466, 23);
+            this.progressBar.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 272);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.cbFbk);
             this.Controls.Add(this.cbFdb);
             this.Controls.Add(this.cbBak);
@@ -131,6 +140,7 @@
         private System.Windows.Forms.CheckBox cbBak;
         private System.Windows.Forms.CheckBox cbFdb;
         private System.Windows.Forms.CheckBox cbFbk;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 

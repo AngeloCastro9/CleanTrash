@@ -6,17 +6,23 @@ namespace CleanTrash
 {
     class deleteManager
     {
-        public void delete(string extension, string folderPath)
+        public void delete(string extension, string folderPath, ProgressBar pBar)
         {
-            var pastaOrigem = folderPath;
-            var arquivos = new DirectoryInfo(pastaOrigem).GetFiles(extension, SearchOption.AllDirectories);
-            foreach (var arquivo in arquivos)
+            var files = new DirectoryInfo(folderPath).GetFiles(extension, SearchOption.AllDirectories);
+            pBar.Visible = true;
+            pBar.Minimum = 1;
+            pBar.Maximum = files.Length;
+            pBar.Step = 1;
+
+            if (files.Length == 0)
+                MessageBox.Show("All clean!");
+            foreach (var file in files)
             {
-                var nomeArquivo = Path.GetFullPath(arquivo.FullName);
                 try
                 {
-                    File.Delete(nomeArquivo);
-
+                    File.Delete(Path.GetFullPath(file.FullName));
+                    if (pBar.Value != files.Length)
+                        pBar.Value++;
                 }
                 catch (Exception err)
                 {

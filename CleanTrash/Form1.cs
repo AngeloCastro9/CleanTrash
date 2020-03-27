@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace CleanTrash
@@ -17,12 +18,19 @@ namespace CleanTrash
             {
                 if (cbBak.Checked || cbFbk.Checked || cbFdb.Checked)
                 {
+                    List<string> extensions = new List<string>();
+
                     if (cbBak.Checked)
-                        dm.delete("*.txt", folderPath.Text);
+                        extensions.Add("*.txt");
                     if (cbFbk.Checked)
-                        dm.delete("*.bmp", folderPath.Text);
+                        extensions.Add("*.bmp");
                     if (cbFdb.Checked)
-                        dm.delete("*.rar", folderPath.Text);
+                        extensions.Add("*.rar");
+
+                    foreach(var extension in extensions)
+                    {
+                        dm.delete(extension, folderPath.Text, progressBar);
+                    }
                 }
                 else
                 {
