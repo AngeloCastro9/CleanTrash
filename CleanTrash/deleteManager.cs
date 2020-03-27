@@ -8,28 +8,20 @@ namespace CleanTrash
     {
         public void delete(string extension, string folderPath)
         {
-
-            if (folderPath != "")
+            var pastaOrigem = folderPath;
+            var arquivos = new DirectoryInfo(pastaOrigem).GetFiles(extension, SearchOption.AllDirectories);
+            foreach (var arquivo in arquivos)
             {
-                var pastaOrigem = folderPath;
-                var arquivos = new DirectoryInfo(pastaOrigem).GetFiles(extension, SearchOption.AllDirectories);
-                foreach (var arquivo in arquivos)
+                var nomeArquivo = Path.GetFullPath(arquivo.FullName);
+                try
                 {
-                    var nomeArquivo = Path.GetFullPath(arquivo.FullName);
-                    try
-                    {
-                        File.Delete(nomeArquivo);
+                    File.Delete(nomeArquivo);
 
-                    }
-                    catch (Exception err)
-                    {
-                        MessageBox.Show(err.Message);
-                    }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Invalid path");
+                catch (Exception err)
+                {
+                    MessageBox.Show(err.Message);
+                }
             }
         }
     }

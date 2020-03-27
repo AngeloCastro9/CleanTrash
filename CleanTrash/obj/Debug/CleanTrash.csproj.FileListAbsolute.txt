@@ -8,3 +8,13 @@ C:\Users\mathe\Área de Trabalho\CleanTrash\CleanTrash\obj\Debug\CleanTrash.cspr
 C:\Users\mathe\Área de Trabalho\CleanTrash\CleanTrash\obj\Debug\CleanTrash.csproj.CoreCompileInputs.cache
 C:\Users\mathe\Área de Trabalho\CleanTrash\CleanTrash\obj\Debug\CleanTrash.exe
 C:\Users\mathe\Área de Trabalho\CleanTrash\CleanTrash\obj\Debug\CleanTrash.pdb
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\bin\Debug\CleanTrash.exe.config
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\bin\Debug\CleanTrash.exe
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\bin\Debug\CleanTrash.pdb
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Debug\CleanTrash.csprojAssemblyReference.cache
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Debug\CleanTrash.Form1.resources
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Debug\CleanTrash.Properties.Resources.resources
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Debug\CleanTrash.csproj.GenerateResource.cache
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Debug\CleanTrash.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Debug\CleanTrash.exe
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Debug\CleanTrash.pdb
