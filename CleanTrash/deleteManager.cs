@@ -10,7 +10,7 @@ namespace CleanTrash
         {
             var files = new DirectoryInfo(folderPath).GetFiles(extension, SearchOption.AllDirectories);
             pBar.Visible = true;
-            pBar.Minimum = 1;
+            pBar.Minimum = 0;
             pBar.Maximum = files.Length;
             pBar.Step = 1;
 
