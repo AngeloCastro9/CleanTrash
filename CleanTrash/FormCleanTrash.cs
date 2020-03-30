@@ -6,6 +6,7 @@ namespace CleanTrash
 {
     public partial class FormCleanTrash : Form
     {
+        deleteManager dm = new deleteManager();
         public FormCleanTrash()
         {
             InitializeComponent();
@@ -24,7 +25,6 @@ namespace CleanTrash
                 if (tbFileName.Text != "")
                 {
                     string fileName = tbFileName.Text + "*.*";
-                    deleteManager dm = new deleteManager();
                     dm.delete(fileName, folderPath.Text, progressBar);
                 }
                 else
@@ -40,24 +40,28 @@ namespace CleanTrash
 
         private void clean()
         {
-            deleteManager dm = new deleteManager();
+            List<string> extensions = new List<string>();
             if (folderPath.Text != "")
             {
-                if (cbBak.Checked || cbFbk.Checked || cbFdb.Checked)
+                if (textBox1.Text != "")
                 {
-                    List<string> extensions = new List<string>();
-
-                    if (cbBak.Checked)
-                        extensions.Add("*.txt");
-                    if (cbFbk.Checked)
-                        extensions.Add("*.bmp");
-                    if (cbFdb.Checked)
-                        extensions.Add("*.rar");
-
-                    foreach (var extension in extensions)
+                    var newExtensions = textBox1.Text.Trim().Split(',');
+                    foreach (var e in newExtensions)
                     {
-                        dm.delete(extension, folderPath.Text, progressBar);
+                        extensions.Add($"*.{e}");
                     }
+                }
+
+                if (cbBak.Checked || cbFbk.Checked || cbFdb.Checked || textBox1.Text != "")
+                {
+                    if (cbBak.Checked)
+                        extensions.Add("*.bak");
+                    if (cbFbk.Checked)
+                        extensions.Add("*.fbk");
+                    if (cbFdb.Checked)
+                        extensions.Add("*.fdb");
+
+                    dm.delete(extensions, folderPath.Text, progressBar);
                 }
                 else
                 {
@@ -72,11 +76,8 @@ namespace CleanTrash
 
         private void btnClean_Click(object sender, EventArgs e)
         {
-            if (cbBak.Checked || cbFbk.Checked || cbFdb.Checked)
-            {
-                progressBar.Visible = true;
-                clean();
-            }
+            progressBar.Visible = true;
+            clean();
             if (cbFileName.Checked)
             {
                 progressBar.Visible = true;

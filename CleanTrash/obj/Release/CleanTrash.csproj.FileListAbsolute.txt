@@ -1,0 +1,10 @@
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\bin\Release\CleanTrash.exe.config
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\bin\Release\CleanTrash.exe
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\bin\Release\CleanTrash.pdb
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Release\CleanTrash.csprojAssemblyReference.cache
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Release\CleanTrash.FormCleanTrash.resources
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Release\CleanTrash.Properties.Resources.resources
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Release\CleanTrash.csproj.GenerateResource.cache
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Release\CleanTrash.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Release\CleanTrash.exe
+C:\Users\mathe\Área de Trabalho\Fortes_CleanTrash\CleanTrash\obj\Release\CleanTrash.pdb
