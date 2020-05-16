@@ -10,6 +10,6 @@
 
 ### Deleting by name:
 
-**2.2 - Write the file name**
+**2.1 - Write the file name**
 
 **3 - Click on "CLEAN"**
